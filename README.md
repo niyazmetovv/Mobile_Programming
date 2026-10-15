@@ -14,20 +14,31 @@ Mobile_Programming/
 │   ├── Section 2/
 │   ├── Section 3/
 │   └── Section 4/
-└── Lab 4/
+├── Lab 4/
+│   ├── pubspec.yaml
+│   └── lib/
+│       ├── main.dart
+│       ├── task1_screen.dart
+│       ├── task2_screen.dart
+│       ├── task3_screen.dart
+│       ├── task4_screen.dart
+│       ├── task5_screen.dart
+│       ├── task6_screen.dart
+│       ├── task7_screen.dart
+│       ├── task8_screen.dart
+│       ├── task9_screen.dart
+│       └── task10_screen.dart
+└── Lab 5/
     ├── pubspec.yaml
     └── lib/
         ├── main.dart
+        ├── task_host.dart
         ├── task1_screen.dart
         ├── task2_screen.dart
         ├── task3_screen.dart
         ├── task4_screen.dart
         ├── task5_screen.dart
-        ├── task6_screen.dart
-        ├── task7_screen.dart
-        ├── task8_screen.dart
-        ├── task9_screen.dart
-        └── task10_screen.dart
+        └── task6_screen.dart
 ```
 
 ## Lab 4: Flutter Mobile Widgets
@@ -66,9 +77,26 @@ Complete implementation of the full 10-task workbook (100 pts requirement):
   - Information Card with header, subtitle, leading icon, and action button.
   - FAQ screen with collapsible ExpansionTile widgets.
 
+## Lab 5: Navigation and Routing
+
+All 6 categories of the workbook, 5 tasks each (30 tasks). Each category file holds its 5 tasks, opened from a menu. The small button at the bottom left of a running task goes back to the menu. `task_host.dart` holds that shared menu and button.
+
+- **Task 1: Navigator push and pop** (`task1_screen.dart`)
+  - Two screens, three screen chain, pushReplacement login, popUntil back to the start, canPop back button.
+- **Task 2: Named routes** (`task2_screen.dart`)
+  - Route table with constants, menu with four routes, onUnknownRoute 404 page, drawer with pushReplacementNamed, log out with pushNamedAndRemoveUntil.
+- **Task 3: Constructor arguments** (`task3_screen.dart`)
+  - Product list to details, greeting, contact card, colour picker returning a result, counter editor handling a null result.
+- **Task 4: Named route arguments** (`task4_screen.dart`)
+  - ScreenArguments class, number and its square, user profile, onGenerateRoute with type check, rating result from a named route.
+- **Task 5: Transition animations** (`task5_screen.dart`)
+  - Fade, slide from the right, slide from the bottom, scale with fade, reusable FadeRoute and a global page transitions theme.
+- **Task 6: go_router** (`task6_screen.dart`)
+  - go vs push, path parameters, extra object, named routes with errorBuilder, CustomTransitionPage with a reusable buildPage helper.
+
 ## Running the Project
 
-From the `Tutorials/Lab_4` directory:
+From the `Tutorials/Lab_4` directory (Lab 4) or the `Tutorials/lab5_nav` directory (Lab 5):
 
 ```bash
 flutter run
